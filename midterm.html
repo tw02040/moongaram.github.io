@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>중간고사</title>
+ 	
+ 	<style>
+ 	 body{font-family: "Malgun Gothic" , Sans-serif;
+         background-color: rgb(176,238,255);
+         }
+
+     p {font-size: 13px;}
+
+     h1{font-size: 55px;}
+
+     h2{color: rgb(22,204,126);
+        border-bottom: 3px solid;
+        font-size: 22px;
+        padding-bottom: 8px;
+        padding-top: 12px; 
+        }
+
+     h6{font-size: 12px;}
+
+     div.all{max-width: 500px;
+             margin-right: auto;
+             margin-left: auto;}
+
+     div.title{text-align: right;
+               color: rgb(68,68,68);}
+
+     img {width: 110px; height: 135px;
+          float: right;
+          box-shadow: 1px 1px 1px gray;}
+
+     table {text-align: center;
+            width: 200px;
+            background-color: rgb(240,240,240);
+            box-shadow: 1px 1px 1px gray;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 13px;}
+
+     .moon{text-align: center;
+           border-top: 1px solid;
+           font-size: 13px;
+           margin-top: 40px;}
+
+     span.brown{color: white;
+     	        background-color: rgb(101,102,52);
+     	        padding: 0px 2px 0px 2px;}
+
+     span.green{background-color: rgb(22,204,126);
+                padding: 0px 3px 0px 3px;}
+     .hal{font-size: 15px;}
+
+     ol{font-size: 13px;}
+
+     li{padding-bottom: 5px;}
+
+     ul{font-size: 13px}
+
+
+
+
+ 	</style>
+
+ </head>
+
+ <body>
+
+<div class="all">
+
+  <div class="title">
+ 	<h1>중간고사</h1>
+ 	<h6>문가람</h6>
+  </div>
+
+ 	<h2>이미지 넣기</h2>
+ 	<p><img class="picture" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="profile"></p>
+ 	<p>이미지를 넣으려면 <span class="brown">img</span> 요소를 사용합니다.</p>
+ 	<p><span class="brown">src</span> 속성에는 이미지의 경로 (URL)를 적습니다.</p>
+ 	<p>이미지 요소에는 항상 <span class="brown">alt</span> 속성을 사용하여 대체 텍스트를 명시해 주어야 합니다. "alt"는 "Alternative text"의 약자로, 이미지를 표시할 수 없을 때 이미지를 대신하여 나타낼 텍스트를 뜻합니다.</p>
+
+ 	<h2>블럭 요소 목록</h2>
+ 	<p>다음은 HTML에서 자주 사용되는 요소들입니다.</p>
+ 	<ol>
+ 		<li> <span class="green"><strong>P</strong></span>: 단락 (paragraph)</li>
+ 		<li> <span class="green"><strong>h1</strong></span>: 큰제목 (Heading 1)</li>
+ 		<li> <span class="green"><strong>ul</strong></span>: 순서 없는 목록 (Unordered List)</li>
+ 		<li> <span class="green"><strong>ol</strong></span>: 순서 있는 목록 (Ordered List)</li>
+ 		<li> <span class="green"><strong>table</strong></span>:표 (table)</li>
+ 	</ol>
+
+ 		<h2>표 만들기</h2>
+ 		<p>표를 만들려면 <span class="brown">table</span> 요소를 사용합니다.</p>
+
+ 			<table>
+ 				<thead>
+ 				 <tr>
+ 					<th>음료</th>
+ 					<th>가격</th>
+ 					<th>알콜</th>
+ 				 </tr>
+ 				</thead>
+ 				<tbody>
+ 					<tr>
+ 						<td>아메리카노</td>
+ 						<td>2,000</td>
+ 						<td>X</td>
+ 					</tr>
+ 					<tr>
+ 						<td>카페모카</td>
+ 						<td>2,500</td>
+ 						<td>X</td>
+ 					</tr>
+ 					<tr>
+ 						<td>맥주</td>
+ 						<td>3,000</td>
+ 						<td>Y</td>
+ 					</tr>
+ 				</tbody>
+ 			</table>
+
+ 			<h2>중첩된 목록</h2>
+ 			<p>목록 요소 안에 또다른 목록 요소를 중첩하여 사용 할 수 있습니다.</p>
+    
+    <ol class="hal">
+    	<li><strong>홍길동</strong></li>
+    		<ul>
+    			<li>지각 없음</li>
+    			<li>결석 없음</li>
+    			<li>과제 만점</li>
+    		</ul>
+        <li><strong>이몽룡</strong></li>
+    		<ul>
+    			<li>지각 2회</li>
+    			<li>결석 없음</li>
+    			<li>과제 만점</li>
+    		</ul>
+    </ol>
+
+    <h2>인라인 요소 목록</h2>
+    <p>다음은 HTML에서 자주 사용되는 요소들입니다.</p>
+
+    <ul>
+    	<li><span class="green"><strong>a</strong></span> : 하이퍼링크(Anchor)</li>
+    	<li><span class="green"><strong>img</strong></span> : 이미지(Image)</li>
+    	<li><span class="green"><strong>span</strong></span> : 일반용도의 인라인 (span)</li>
+    	<li><span class="green"><strong>strong</strong></span> : 중요 (Strong)</li>
+    	<li><span class="green"><strong>em</strong></span> : 강조 (Emphasis)</li>
+    </ul>
+
+    <h2>HTML이란?</h2>
+
+   <p>HTML은 <span class="green"><strong>하이퍼텍스트 마크업 언어(Hypertext Markup Language)</strong></span>의 약자로, 웹 페이지를 만들 때 사용되는 문서 형식입니다.</p>
+   <p>하이퍼 텍스트(Hypertext)란 하이퍼링크(Hyperlink)를 담고 있는 문서를 뜻합니다. 하이퍼링크는 문서들이 서로 연결 되어있는 고리를 말합니다.
+
+
+
+   	<p class="moon">2014년 10월 14일 중간고사, 문가람 작성</p>
+
+    
+  </div>
+
+
+ </body>
+
+</html>
