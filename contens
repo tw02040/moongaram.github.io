@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>차례</title>
+
+	<style>
+
+	.pagenum {font-weight: bold;
+              padding-right: 30px;
+              float: left;
+              font-size: 13px;}
+
+    ol {font-family: "Malgun Gothic" , serif;
+      list-style-type: none;
+      float: left;
+      margin-right: 30px;
+     }
+
+
+
+  .box2 {width: 225px;}
+  .box3 {width: 255px;}
+  .box4 {width: 255px;}
+  .box5 {width: 225px;}
+  .box6 {width: 225px;}
+  .box7 {width: 225px;}
+  .box8 {width: 255px;}
+  .box9 {width: 255px;}
+
+  div.all {margin-top: 20%;
+          margin-right: auto;
+          margin-left: auto;
+          max-width: 1200px;}
+
+
+
+  div.what {width: 255px;}
+
+  .space {padding-top: 20px;}
+
+div.all2 {margin-top: 25%;
+          float: right;
+          margin-right: 370px;
+          padding-left: 20px;}
+
+div.all3{margin-top: 22%;
+        float: right;
+        margin-right: 600px;
+        margin-bottom: 220px;}
+ 
+
+
+
+
+  .title { font-size: 12px;
+           color: #FFF;
+           transition: color 1s;
+            }
+
+  h4 {padding-left: 40px;
+      padding-bottom: 0px;
+     }
+
+  .끝 {padding-left:50px;}
+
+  .title:hover {
+         color: #000;
+
+         }
+
+
+
+	</style>
+</head>
+	
+
+	<body>
+
+
+		<div class="all">
+      <div class="what">
+		  <ol calss ="box1">
+          <li>
+              <span class="pagenum">4</span>
+              <span class="title"><h4>김선정</h4>
+              <h4>플랫폼: 일시적 프로젝트</h4></span>
+          </li>
+          <li>
+            <span class="pagenum">14</span>
+            <span class="title"><h4>"I have nothing to say and
+              I am saying it"</h4></span>
+          </li>
+          <li>
+            <span class="pagenum">26</span>
+            <span class="title"><p>존 케이지/김순기</p></span>
+          </li>
+          <li>
+            <span class="pagenum">28</span>
+            <span class="title"><p>길버트 & 조지</p></span>
+          </li>
+        </ol>
+      </div>
+
+
+
+
+      <ol class="box2">
+       
+          <li>
+              <span class="pagenum">30</span>
+              <span class="title"><h4>바르또마리</h4>
+              <h4>≪무대없는 연극≫과 <br>
+                  ≪세상이라는 거대한 연극≫: <br>
+                  20세기 미술 안에서의 <br>
+                  연극성에 대한 두가지 실험</h4></span>
+          </li>
+          <li>
+            <span class="pagenum">40</span>
+            <span class="title"><p>살바도르달리</p></span>
+          </li>
+          <li>
+            <span class="pagenum">42</span>
+            <span class="title"><p>다비드 라펠라스</p></span>
+          </li>
+          <li>
+            <span class="pagenum">44</span>
+            <span class="title"><p>브루스 나우만</p></span>
+          </li>
+         <li>
+            <span class="pagenum">46</span>
+            <span class="title"><p>로버트 모리스</p></span>
+          </li>
+        </ol>
+
+
+
+        <ol class="box3">
+       
+          <li>
+              <span class="pagenum">48</span>
+              <span class="title"><h4>박소현</h4>
+              <h4>엥포르멜의 지정학과 
+                  '행동하는 화가':
+                  그 개념적 재배치의 계보</h4></span>
+          </li>
+          <div class="space">
+          <li>
+            <span class="pagenum">72</span>
+            <span class="title"><p>앨런 캐프로</p></span>
+          </li>
+          <li>
+            <span class="pagenum">74</span>
+            <span class="title"><p>비로 아콘치</p></span>
+          </li>
+          <li>
+            <span class="pagenum">76</span>
+            <span class="title"><p>트리샤 브라운</p></span>
+          </li>
+         <li>
+            <span class="pagenum">78</span>
+            <span class="title"><p>아본느 라이너</p></span>
+          </li>
+          </div>
+        </ol>
+
+
+       <ol class="box4">
+       
+          <li>
+              <span class="pagenum">80</span>
+              <span class="title"><h4>수미토모 후미히코</h4>
+              <h4>전후 일본 예술의<br>
+                  민족지적 전환</h4></span>
+          </li>
+          <div class="space">
+          <li>
+            <span class="pagenum">88</span>
+            <span class="title"><p>무라카미 시부로</p></span>
+          </li>
+          <li>
+            <span class="pagenum">90</span>
+            <span class="title"><p>플레이</p></span>
+          </li>
+        </div>
+        </ol>
+
+    </div>
+
+    <div class="all2">
+      <ol class="box5">
+       
+          <li>
+              <span class="pagenum">92</span>
+              <span class="title"><h4>슈앙</h4>
+              <h4>중국의 퍼포먼스와<br>
+                  라이브아트</h4></span>
+          </li>
+          <div class="space">
+          <li>
+            <span class="pagenum">98</span>
+            <span class="title"><p>액션 인 차이나</p></span>
+          </li>
+          <li>
+            <span class="pagenum">100</span>
+            <span class="title"><p>다다오 라이브<br>아트 페스티벌</p></span>
+          </li>
+        </div>
+        </ol>
+
+      <ol class="box6">
+       
+
+          <li>
+            <span class="pagenum">106</span>
+            <span class="title"><p>마리나 아브라모비치</p></span>
+          </li>
+          <li>
+            <span class="pagenum">110</span>
+            <span class="title"><p>니나 바이에르 & 마리 룬</p></span>
+          </li>
+           <li>
+            <span class="pagenum">114</span>
+            <span class="title"><p>안젤라 블로호</p></span>
+          </li>
+          <li>
+            <span class="pagenum">118</span>
+            <span class="title"><p>쟈넷 카디프</p></span>
+          </li>
+          <li>
+            <span class="pagenum">122</span>
+            <span class="title"><p>최재은</p></span>
+          </li>
+          <li>
+            <span class="pagenum">126</span>
+            <span class="title"><p>콘탁 곤조</p></span>
+          </li>
+          <li>
+            <span class="pagenum">130</span>
+            <span class="title"><p>마틴 크리드</p></span>
+          </li>
+          <li>
+            <span class="pagenum">134</span>
+            <span class="title"><p>마농 더 부르</p></span>
+          </li>
+          <li>
+            <span class="pagenum">138</span>
+            <span class="title"><p>얀 파브르</p></span>
+          </li>
+          <li>
+            <span class="pagenum">142</span>
+            <span class="title"><p>패터 피슐리/다비드 바이스</p></span>
+          </li>
+          <li>
+            <span class="pagenum">146</span>
+            <span class="title"><p>댄 그레이엄</p></span>
+          </li>
+          <li>
+            <span class="pagenum">150</span>
+            <span class="title"><p>함양아</p></span>
+          </li>
+          <li>
+            <span class="pagenum">154</span>
+            <span class="title"><p>에페 하인</p></span>
+          </li>
+          <li>
+            <span class="pagenum">158</span>
+            <span class="title"><p>루이 자콥</p></span>
+          </li>
+          <li>
+            <span class="pagenum">164</span>
+            <span class="title"><p>김소라</p></span>
+          </li>
+
+        </ol>
+
+
+
+
+
+              <ol class="box7">
+       
+
+          <li>
+            <span class="pagenum">168</span>
+            <span class="title"><p>김순기</p></span>
+          </li>
+          <li>
+            <span class="pagenum">170</span>
+            <span class="title"><p>수라시 쿠솔롱</p></span>
+          </li>
+           <li>
+            <span class="pagenum">174</span>
+            <span class="title"><p>이강소</p></span>
+          </li>
+          <li>
+            <span class="pagenum">178</span>
+            <span class="title"><p>무라이 게이데쓰</p></span>
+          </li>
+          <li>
+            <span class="pagenum">182</span>
+            <span class="title"><p>남화연</p></span>
+          </li>
+          <li>
+            <span class="pagenum">188</span>
+            <span class="title"><p>박주연</p></span>
+          </li>
+          <li>
+            <span class="pagenum">192</span>
+            <span class="title"><p>나빈당</p></span>
+          </li>
+          <li>
+            <span class="pagenum">196</span>
+            <span class="title"><p>마르쿠스 쉰발트</p></span>
+          </li>
+          <li>
+            <span class="pagenum">200</span>
+            <span class="title"><p>티노 세갈</p></span>
+          </li>
+          <li>
+            <span class="pagenum">204</span>
+            <span class="title"><p>다카야마 아키라</p></span>
+          </li>
+          <li>
+            <span class="pagenum">208</span>
+            <span class="title"><p>다나카 고키</p></span>
+          </li>
+          <li>
+            <span class="pagenum">212</span>
+            <span class="title"><p>우지노 무네테루</p></span>
+          </li>
+          <li>
+            <span class="pagenum">216</span>
+            <span class="title"><p>토마 뷔유</p></span>
+          </li>
+          <li>
+            <span class="pagenum">220</span>
+            <span class="title"><p>시징맨</p></span>
+          </li>
+          <li>
+            <span class="pagenum">226</span>
+            <span class="title"><p>슈 젠</p></span>
+          </li>
+          <li>
+            <span class="pagenum">230</span>
+            <span class="title"><p>윤동구</p></span>
+          </li>
+
+        </ol>
+
+    </div>
+
+
+
+    <div class="all3">
+
+      <ol class="box8">
+       
+          <li>
+            <span class="pagenum">234</span>
+            <span class="title"><p>강연·토크</p></span>
+          </li>
+          <li>
+            <span class="pagenum">264</span>
+            <span class="title"><p>비디오 프로그램</p></span>
+          </li>
+          <li>
+            <span class="pagenum">272</span>
+            <span class="title"><p>음악극 공연</p></span>
+          </li>
+          <li>
+            <span class="pagenum">276</span>
+            <span class="title"><p>플랫폼 요코하마</p></span>
+          </li>
+
+        </ol>
+
+
+        <ol class="box8">
+       
+          <li>
+              <span class="pagenum">282</span>
+              <span class="title"><h4>정현</h4>
+              <h4 class="끝">아방가르드와 걷기</h4></span>
+          </li>
+          <li>
+              <span class="pagenum">292</span>
+              <span class="title"><h4>배은아</h4>
+              <h4 class="끝">미래의 과거:<br>
+                  플랫폼 서울 2008</h4></span>
+          </li>
+        </ol>
+
+    </div>
+
+	</body>
+
+</html>
