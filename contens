@@ -54,7 +54,7 @@ div.all3{margin-top: 22%;
 
 
   .title { font-size: 12px;
-           color: #FFF;
+           color: #dadada;
            transition: color 1s;
             }
 
