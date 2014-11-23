@@ -70,6 +70,7 @@
       border-radius: 80px;
       margin-bottom: 10px;}
   ul.sidemenu {
+        height: 600px;
         margin-top: 10%;
         margin-left: 15px;
         padding:0;}
@@ -109,7 +110,6 @@
       font-size: 12px;
       color:white;
       padding: 2px 4px 2px 4px;
-      position: fixed;
       margin-top: 13px;}
     .new {background-color: #4986E7;
       margin-left: 240px;}
@@ -246,18 +246,24 @@
                 font-weight: bold;
                 font-family: 'Roboto', sans-serif;}
   ul.list3 > .time3, .time4 {float: right;}
-  ul.icon2 {padding: 0;
-           float:right;
-           margin-bottom: 42px;
+  ul.list3{display: inline-block;
           }
-  img.star3 {float: right;
-            padding-left : 60%;}
+  span.star3 {float: right;
+            right: 60px;
+            margin-bottom: 20px;
+            display: inline-block;
+            position: absolute;
+            padding-bottom: 30px;
+            }
+  .iii {position: absolute;
+        right: 60px; 
+        top: 315px;}
   ul.sulli {border-bottom: 0;
             margin-bottom: 0;}
 
 
 
-  @media (max-width:900px){
+  @media (max-width:1000px){
       div.menu2, .talkbox {visibility: hidden;}
     }
 
@@ -386,9 +392,7 @@
         <ul>
           <li> <h2 class="club">오늘 밤에 강남 클럽 갈 사람?</h2> </li>
           <li> <span class="notice2">Fun</span> </li>
-          <li> <span class="notice3">Inbox</span> </li>
-          <li><img class="star3" src="http://googledrive.com/host/0B-l4_huYTH9ySGNua1hKX3NJaFE" alt="즐겨찾기"></li>
-
+          <li> <span class="notice3">Inbox</span><span class="star3"><img src="http://googledrive.com/host/0B-l4_huYTH9ySGNua1hKX3NJaFE" alt="즐겨찾기"></span></li>
         </ul>
 
         <ul>
@@ -410,22 +414,23 @@
         <li class="time3">Nov 21</li>
         </ul>
 
-
+        
         <ul class="sulli">
           <li class="letter">
         <img class="l4" src="http://googledrive.com/host/0B-l4_huYTH9yRDhVd0lsUGFPczQ" alt="picture">
 
-        <ul class="list3"><li><h2 class="name3">진리</h2></li> <li><span class="re">나도나도! 나 에프엑스 때려치웠잖아!</span></li>
+        <ul class="list3"><li><h2 class="name3">진리</h2>
+        </li>
+
+          <li><span class="re">나도나도! 나 에프엑스 때려치웠잖아!</span></li>
           <li class="time4">Nov 21 <span class="detail"> View details</span></ul></li>
-
-        <li class="icon">
-          <ul class="icon2">
-          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjhXZlZSY05wdjQ" alt="되돌아가기"></li>
-          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yY1pKenh5c2ZrMlU" alt="보기"></li>
-          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjZwVTJIOTVDWGs" alt="더보기"></li>
-
-        </ul></li>
       </ul>
+
+      <div class="iii">
+        <span class="icon2"><img src="http://googledrive.com/host/0B-l4_huYTH9yZjhXZlZSY05wdjQ" alt="되돌아가기"></span>
+          <span class="icon2"><img src="http://googledrive.com/host/0B-l4_huYTH9yY1pKenh5c2ZrMlU" alt="보기"></span>
+          <span class="icon2"><img src="http://googledrive.com/host/0B-l4_huYTH9yZjZwVTJIOTVDWGs" alt="더보기"></span>
+      </div>
 
       
       <ul>
