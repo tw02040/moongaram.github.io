@@ -45,12 +45,14 @@
 
   div.menu2 {height: 45px;
       background-color: #DA4336;
-      width: 60%;
+      width: 68%;
       position: fixed;
       top:0;
       margin-left: 497px;
       }
-  div.menu2 >ul {margin-left: 510px;}
+  div.menu2 >ul {padding:0;
+                margin-left: 67%;
+                margin-top: 13px;}
 
   div.menu2 >ul> li {display: inline-block;
                     margin-right: 20px;}
@@ -69,9 +71,11 @@
   .s2 , .suzy {width: 27px;
       border-radius: 80px;
       margin-bottom: 10px;}
-  ul.sidemenu {margin-top: 10%;
+  ul.sidemenu {
+        margin-top: 10%;
         margin-left: 15px;
         padding:0;}
+  ul.sidemenu>li{vertical-align: top;}
   .s1{margin-bottom: 10px;}
   .sidemenu2{position: fixed;
         bottom: 40px;}
@@ -103,10 +107,11 @@
     .l1 ,.l2,.l3 ,.l4 {margin-bottom: 6px;
        margin-right: 20px;}
 
-    .new , .new2 , .new3{display: inline-block;
+    .new , .new2 , .new3{float:right;
       font-size: 12px;
       color:white;
-      padding: 2px 4px 2px 4px;}
+      padding: 2px 4px 2px 4px;
+      margin-top: 13px;}
     .new {background-color: #4986E7;
       margin-left: 240px;}
 
@@ -141,7 +146,7 @@
               font-family: 'Nanum Gothic', serif;}
     .preview2 {margin-right: 25px;}
     .preview3 {margin-right: 83px;}
-    .preview4 {margin-right: 70px;}
+    .preview4 {margin-right: 175px;}
     .preview5 {margin-right: 46px;}
      .timestar {display: inline-block;
               padding: 0;
@@ -187,32 +192,33 @@
   .notice3{background-color:#DCDCDC;
           color: #9D9D9D;}
   .star2 {margin-left: 400px;}
-  .talkbox { display: inline-block;
+  div.talkbox { display: inline-block;
       position: fixed;
+      overflow-y: scroll;
       top:45px;
-      margin-left: 430px;
-      overflow-y: scroll;}
+      margin-left: 430px;}
 
-  ul.list2{display: inline-block;
-                  }
+
+  ul.list3{float: right;
+            padding: 0;}
   span.re {font-family: 'Nanum Gothic', serif;
             font-size: 11px;}
   li.time2 ,.time3 , .time4 {font-size: 10px;
           font-family: 'Roboto', sans-serif;
           font-weight: bold;
           color:#B7B7B7;
+          float: right;
           }
-  li.time2 {margin-left: 500px;}
-  li.time3 {margin-left: 461px;}
-  li.time4{margin-left: 2px;}
+  li.time2 {margin-right: 40px;}
+  li.time3 {margin-right: 40px;}
+  li.time4{margin-right: 77px;}
 
   div.talkbox >ul >li >img.l4 {margin-bottom: 0;
                               margin-right: 10px;
                              margin-left: 10px;}
   div.talkbox >ul.sulli >li >img.l4 {margin-bottom: 20px;}
-  ul.sulli >li.letter {margin-right: 355px;}
-  li.icon > ul > li {display: inline;
-                    padding: 0;
+  li.icon > ul > li {float: left;
+                     padding: 0;
                     margin-left: 10px;}
   .detail ,.show {color: #3C81F3;
           font-weight: bold;}
@@ -225,13 +231,21 @@
   .sunday {color: #A0A0A0;}
 
   ul.last {border-bottom: 0;
-          padding-left: 60px;}
+          padding-left: 15%;}
   ul.last >li {width: 45px;
               text-align: center;}
-  ul.last > li.right {margin-right: 190px;}
+  ul.last > li.right {margin-right: 25%;}
   span.play {font-size: 10px;
                 font-weight: bold;
                 font-family: 'Roboto', sans-serif;}
+  ul.list3 > .time3, .time4 {float: right;}
+  ul.icon2 {padding: 0;
+           float:right;
+           margin-bottom: 45px;
+           margin-left: 470px;
+          }
+  img.star3 {float: right;
+            padding-left : 520px;}
 
 
 
@@ -324,7 +338,7 @@
       <li class="letter2">
         <img class="l4" src="http://cfile23.uf.tistory.com/image/2467E73653402172357291" alt="picture">
 
-        <ul class="list2"><li><h2 class="name2">범아~</h2></li> <li><h3>그 코큰애는 정리한다며</h3></li><li><span class="preview4"> 도대체 언제 정리하는데 너 나 가지고 노는거냐?</span></li></ul>
+        <ul class="list2"><li><h2 class="name2">범아~</h2></li> <li><h3>그 코큰애는 정리한다며</h3></li><li><span class="preview4"> 너 나가지고 노는거였어?</span></li></ul>
 
         <ul class="timestar"> <li class="time">Nov 23</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9yQ2U2Q1lqVmt0ZHM
 " alt="즐겨찾기"></li></ul>
@@ -333,7 +347,7 @@
       <li class="letter">
         <img class="l4" src="http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10666123_392427517588405_24853237_a.jpg" alt="picture">
 
-        <ul class="list2"><li><h2 class="name2">A반 친구</h2></li> <li><h3>PPT 정리부탁해~</h3></li><li><span class="preview5">너 솔직히 조별과제 날로먹는거 알지?^^ 똑바로 해라</span></li></ul>
+        <ul class="list2"><li><h2 class="name2">A반 친구</h2></li> <li><h3>PPT 정리부탁해~</h3></li><li><span class="preview5">너 솔직히 조별과제 날로먹는거 알지?^^ 똑바로 하렴</span></li></ul>
 
         <ul class="timestar"> <li class="time">Nov 22</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9yQ2U2Q1lqVmt0ZHM
 " alt="즐겨찾기"></li></ul>
@@ -365,7 +379,7 @@
           <li> <h2 class="club">오늘 밤에 강남 클럽 갈 사람?</h2> </li>
           <li> <span class="notice2">Fun</span> </li>
           <li> <span class="notice3">Inbox</span> </li>
-          <li><img class="star2" src="http://googledrive.com/host/0B-l4_huYTH9ySGNua1hKX3NJaFE" alt="즐겨찾기"></li>
+          <li><img class="star3" src="http://googledrive.com/host/0B-l4_huYTH9ySGNua1hKX3NJaFE" alt="즐겨찾기"></li>
 
         </ul>
 
@@ -373,7 +387,7 @@
           <li class="letter">
         <img class="l4" src="http://fimg2.pann.com/new/download.jsp?FileID=21103082" alt="picture">
 
-        <ul class="list2"><li><h2 class="name">zico♥</h2></li> <li><span class="re">절대 안된다ㅡㅡ</span></li></ul>
+        <ul class="list3"><li><h2 class="name">zico♥</h2></li> <li><span class="re">절대 안됨!!!ㅡㅡ</span></li></ul>
 
         <li class="time2">Nov 21</li>
         </ul>
@@ -383,7 +397,7 @@
           <li class="letter">
         <img class="l4" src="http://googledrive.com/host/0B-l4_huYTH9ydmR1VmlHMEdTQnc" alt="picture">
 
-        <ul class="list2"><li><h2 class="name3">혀니</h2></li> <li><span class="re">나는 좋아~ 어디서 볼까?</span></li></ul>
+        <ul class="list3"><li><h2 class="name3">혀니</h2></li> <li><span class="re">나는 좋아~ 어디서 볼까?</span></li></ul>
 
         <li class="time3">Nov 21</li>
         </ul>
@@ -393,16 +407,18 @@
           <li class="letter">
         <img class="l4" src="http://googledrive.com/host/0B-l4_huYTH9yRDhVd0lsUGFPczQ" alt="picture">
 
-        <ul class="list2"><li><h2 class="name3">진리</h2></li> <li><span class="re">나도나도! 나 에프엑스 때려치웠어!</span></li>
+        <ul class="list3"><li><h2 class="name3">진리</h2></li> <li><span class="re">나도나도! 나 에프엑스 때려치웠잖아!</span></li>
           <li class="time4">Nov 21 <span class="detail"> View details</span></ul></li>
 
         <li class="icon">
-          <ul>
+          <ul class="icon2">
           <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjhXZlZSY05wdjQ" alt="되돌아가기"></li>
           <li><img src="http://googledrive.com/host/0B-l4_huYTH9yY1pKenh5c2ZrMlU" alt="보기"></li>
           <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjZwVTJIOTVDWGs" alt="더보기"></li>
 
         </ul></li>
+
+      
 
         <li class="sunday">Sunday works! If you can get Dexter and Sophie I will handle the chips and salsa.<br><span class="show">▶ Show quited text</span></li>
 
