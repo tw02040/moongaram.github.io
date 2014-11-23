@@ -1,150 +1,426 @@
+
 <!DOCTYPE html>
 
 <html>
 
  <head>
- 	<meta charset="utf-8">
- 	<title>Google messanger</title>
+  <meta charset="utf-8">
+  <title>Google messanger</title>
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
- 	<style>
+  <style>
 
- 	body {margin: 0;
- 			}
- 	header {}
+  @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
- 	ul {list-style-type: none;
- 		padding: 0;
- 		margin: 0;
- 		padding-top: 11px;
- 		padding-left: 13px;
- 		font-family: 'Roboto', sans-serif;
- 		font-weight: 400;
- 		}
+  
 
- 	div.menu>ul>li , div.side>ul>li {display: inline;}
+  body {margin: 0;
+      }
+  header {}
 
- 	h1 {font-size: 14px;
- 		margin: 0;
- 		display: inline-block;
- 		color: white;
- 		padding-right: 58%;
- 		}
+  ul {list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 11px;
+    padding-left: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    }
 
- 	div.menu {width:497px;
- 			  height: 45px;
- 			background-color: #DA4336;
- 			display: inline-block;}
- 	.menu1 {padding-right: 10%;}
- 	.menu2 {position: fixed;}
- 	div.side {position: absolute;
- 				top:25px;
- 				left:0;
- 				width: 4.5%;
-        height: 700px;
- 				bottom:0;
- 				background-color: white;
- 				position: relative;
- 				margin-right: 0;
- 				display: inline-block;}
- 	.s2 , .suzy {width: 27px;
- 		  border-radius: 80px;
- 		  margin-bottom: 10px;}
- 	ul.sidemenu {margin-top: 10%;
- 				margin-left: 15px;
- 				padding:0;}
- 	.s1{margin-bottom: 10px;}
- 	.sidemenu2{position: fixed;
- 				bottom: 40px;}
- 	.sidemenu3{position: fixed;
- 				bottom: 0;}
+  div.menu>ul>li , div.side>ul>li {display: inline;}
 
- 	div.list{position: absolute;
+  h1 {font-size: 14px;
+    margin: 0;
+    display: inline-block;
+    color: white;
+    padding-right: 58%;
+    }
+
+  div.menu  {width:497px;
+        height: 45px;
+      background-color: #DA4336;
+      display: inline-block;
+    }
+
+  div.menu2 {height: 45px;
+      background-color: #DA4336;
+      width: 60%;
+      position: fixed;
+      top:0;
+      margin-left: 497px;
+      }
+  div.menu2 >ul {margin-left: 510px;}
+
+  div.menu2 >ul> li {display: inline-block;
+                    margin-right: 20px;}
+
+  .menu1 {padding-right: 10%;}
+  div.side {position: absolute;
+        top:25px;
+        left:0;
+        width: 4.5%;
+        height: 400px;
+        bottom:0;
+        background-color: white;
+        position: relative;
+        margin-right: 0;
+        display: inline-block;}
+  .s2 , .suzy {width: 27px;
+      border-radius: 80px;
+      margin-bottom: 10px;}
+  ul.sidemenu {margin-top: 10%;
+        margin-left: 15px;
+        padding:0;}
+  .s1{margin-bottom: 10px;}
+  .sidemenu2{position: fixed;
+        bottom: 40px;}
+  .sidemenu3{position: fixed;
+        bottom: 0;}
+
+  div.list{position: absolute;
             top: 45px;
             left: 59px;
             bottom: 0;
             width: 437px;
             background-color: white;
             box-shadow: -1px 1px 6px #CCC;
-        	overflow-y: scroll;}
+          overflow-y: scroll;}
 
     h2 {font-family: 'Roboto', sans-serif;
-    	font-weight: 400;
-    	font-size: 14px;
-    	margin: 0;}
-   	span {font-family: 'Roboto', sans-serif;
-   		 font-weight: 300;
-   		 font-size: 12px;
-   		 color:#BEBEBE;}
-   	ul.messagelist{padding: 0;}
-   	ul.messagelist > li > ul.list2 {display: inline-block;}
-   	ul.messagelist > li {padding: 20px;
-   						border-bottom: 1px solid #CCC;}
-   	ul.list2{padding: 0;}
-   	.l1 ,.l2,.l3 {margin-bottom: 6px;
-   		 margin-right: 20px;}
+      font-weight: 400;
+      font-size: 14px;
+      margin: 0;}
+    span {font-family: 'Roboto', sans-serif;
+       font-weight: 300;
+       font-size: 12px;
+       color:#BEBEBE;}
+    ul.messagelist{padding: 0;}
+    ul.messagelist > li > ul.list2 {display: inline-block;}
+    ul.messagelist > li {padding: 20px;
+              border-bottom: 1px solid #CCC;}
+    ul.list2{padding: 0;}
+    .l1 ,.l2,.l3 ,.l4 {margin-bottom: 6px;
+       margin-right: 20px;}
 
-   	.new , .new2 , .new3{display: inline-block;
-   		font-size: 12px;
-   		color:white;
-   		padding: 2px 4px 2px 4px;}
-   	.new {background-color: #4986E7;
-   		margin-left: 240px;}
+    .new , .new2 , .new3{display: inline-block;
+      font-size: 12px;
+      color:white;
+      padding: 2px 4px 2px 4px;}
+    .new {background-color: #4986E7;
+      margin-left: 240px;}
 
-   	.new2 {background-color: #16A765;
-   		margin-left: 178px;}
+    .new2 {background-color: #16A765;
+      margin-left: 178px;}
 
-   	.new3 {background-color: #E9B22F;
-   		margin-left: 224px;}
+    .new3 {background-color: #E9B22F;
+      margin-left: 224px;}
 
- 	</style>
+    img.l4 {width: 30px;
+      border-radius: 80px;
+      font-weight: 300;
+      font-size: 12px;
+      color: #6E6966;
+      margin-bottom:15px;
+      margin-right: 11px;}
+    h3 {font-size: 11px;
+        color:#BEBEBE;
+        margin: 0;
+        font-family: 'Nanum Gothic', serif;
+        padding-top: 3px;}
+
+    span.notice {background-color: #FB482B;
+                padding: 1px 3px 1px 3px;
+                color:white;
+                display: inline-block;
+                border-bottom: 20px;
+                margin-right: 6px;
+                }
+    .preview ,.preview2 ,.preview3 , .preview4 ,.preview5
+              {font-size: 11px;
+              font-family: 'Nanum Gothic', serif;}
+    .preview2 {margin-right: 25px;}
+    .preview3 {margin-right: 83px;}
+    .preview4 {margin-right: 70px;}
+    .preview5 {margin-right: 46px;}
+     .timestar {display: inline-block;
+              padding: 0;
+              text-align: right;}
+    li.time {font-size: 10px;
+              padding-bottom: 10px;
+              color:#BEBEBE;}
+    h2.name2 {font-size: 11px;
+            font-family: 'Nanum Gothic', serif;
+            font-weight: bold;}
+    h2.name3{font-family: 'Nanum Gothic', serif;
+            font-size: 11px;
+            font-weight: bold;}
+    .letter2 {background-color: #E3EDFE;
+              border-left: 2px solid #3F83F3;}
+
+    .write {background-color: #DA4336; 
+            padding: 15px;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 40px;
+            left:410px;
+            box-shadow: -1px 3px 5px #CCC;}
+
+  .talkbox > ul {padding: 0;
+                margin: 30px 20px 30px 30px;
+                padding-bottom:20px;
+                border-bottom: 1px solid #CCC; 
+                }
+  .talkbox > ul > li {display: inline-block;
+                      }
+
+  .club {font-size: 14px;
+        color: #5C5C5C;
+        font-weight: bold;
+        font-family: 'Nanum Gothic', serif;}
+  .notice2, .notice3 {font-family: 'Roboto', sans-serif;
+                     font-size: 10px;
+                     padding: 1px 2px 1px 2px;
+                    font-weight: bold;}
+  .notice2 {color: #49669C;
+            background-color: #B6CFF5;}
+  .notice3{background-color:#DCDCDC;
+          color: #9D9D9D;}
+  .star2 {margin-left: 400px;}
+  .talkbox { display: inline-block;
+      position: fixed;
+      top:45px;
+      margin-left: 430px;
+      overflow-y: scroll;}
+
+  ul.list2{display: inline-block;
+                  }
+  span.re {font-family: 'Nanum Gothic', serif;
+            font-size: 10px;}
+  li.time2 ,.time3 , .time4 {font-size: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          color:#B7B7B7;
+          }
+  li.time2 {margin-left: 500px;}
+  li.time3 {margin-left: 461px;}
+  li.time4{margin-left: 2px;}
+
+  div.talkbox >ul >li >img.l4 {margin-bottom: 0;
+                              margin-right: 10px;
+                             margin-left: 10px;}
+  div.talkbox >ul.sulli >li >img.l4 {margin-bottom: 20px;}
+  ul.sulli >li.letter {margin-right: 355px;}
+  li.icon > ul > li {display: inline;
+                    padding: 0;
+                    margin-left: 10px;}
+  .detail ,.show {color: #3C81F3;
+          font-weight: bold;}
+  .sunday, .show {font-size: 11px;
+                  font-family: 'Roboto', sans-serif;
+                  display: block;
+                  font-weight: bold;
+                  padding-top: 30px; 
+                }
+  .sunday {color: #A0A0A0;}
+
+  ul.last {border-bottom: 0;
+          padding-left: 60px;}
+  ul.last > li.right {width: 45px;
+                margin-right: 190px;}
+  span.play {font-size: 10px;
+                font-weight: bold;
+                font-family: 'Roboto', sans-serif;}
+
+
+
+  @media (max-width:700px){
+      div.menu2, .talkbox {visibility: hidden;}
+    }
+
+  </style>
 
  </head>
 
+
+
+
  <body>
 
- 	 	<header>
- 		<div class="menu">
- 			<ul>
- 			<li><img class="menu1" src="http://googledrive.com/host/0B-l4_huYTH9yc1VUY1BlX2dNSVU" alt="메뉴"></li>
- 			<li><h1>Primary</h1></li>
- 			<li><img class="menu2" src="http://googledrive.com/host/0B-l4_huYTH9ycm1wbWItVEZ0QkU" alt="검색"></li>
- 		</ul>
- 		</div>
- 	</header>
+    <header>
+    <div class="menu">
+      <ul>
+      <li><img class="menu1" src="http://googledrive.com/host/0B-l4_huYTH9yc1VUY1BlX2dNSVU" alt="메뉴"></li>
+      <li><h1>Primary</h1></li>
+      <li><img class="menu2" src="http://googledrive.com/host/0B-l4_huYTH9ycm1wbWItVEZ0QkU" alt="검색"></li>
+    </ul>
+    </div>
+  </header>
 
- 	 	<div class="side">
- 	 		<ul class="sidemenu">
+    <div class="side">
+      <ul class="sidemenu">
 
- 	 		<li><img class="suzy" src="http://i.imgur.com/6jGVWZ5.jpg" alt="프로필"></li>
- 	 		<li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9yWnczZkRJS25KVTA" alt="inbox"></li>
- 	 		<li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9yUzBWQ3dVNzJSWWc" alt="group"></li>
- 	 		<li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9ydEtIdDVKd1FpVU0" alt="local"></li>
- 	 		<li><img src="http://googledrive.com/host/0B-l4_huYTH9ySWtJRFdhYm1MeGs" alt="info"></li>
- 	 	</ul>
- 	 	<ul>
- 	 		<li class="sidemenu2"><img class="s2" src="http://cfile30.uf.tistory.com/image/2054034C4FFEC61F185689" alt="프로필사진"></li>
- 	 		<li class="sidemenu3"><img class="s2" src="http://cfile23.uf.tistory.com/image/2467E73653402172357291" alt="프로필사진"></li>
- 	 	</ul> 
- 		</div>
+      <li><img class="suzy" src="http://i.imgur.com/6jGVWZ5.jpg" alt="프로필"></li>
+      <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9yWnczZkRJS25KVTA" alt="inbox"></li>
+      <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9yUzBWQ3dVNzJSWWc" alt="group"></li>
+      <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9ydEtIdDVKd1FpVU0" alt="local"></li>
+      <li><img src="http://googledrive.com/host/0B-l4_huYTH9ySWtJRFdhYm1MeGs" alt="info"></li>
+    </ul>
+    <ul>
+      <li class="sidemenu2"><img class="s2" src="http://cfile30.uf.tistory.com/image/2054034C4FFEC61F185689" alt="프로필사진"></li>
+      <li class="sidemenu3"><img class="s2" src="http://cfile23.uf.tistory.com/image/2467E73653402172357291" alt="프로필사진"></li>
+    </ul> 
+    </div>
 
- 		<div class="list">
- 			<ul class="messagelist">
- 	 		<li><img class="l1" src="http://googledrive.com/host/0B-l4_huYTH9yUXJGR2pwQk5NSzA" alt="groub">
- 	 			<ul class="list2"><li><h2>Social</h2></li> <li><span>Google+</span></li></ul>
- 	 			<span class="new">1 new</span>
- 	 		</li>
- 	 		<li ><img class="l2" src="http://googledrive.com/host/0B-l4_huYTH9yY1hNQWo3M2hMQ2s" alt="local">
- 	 			<ul class="list2"><li><h2>Promotions</h2></li> <li><span>Zagat, Google Offers</span></li></ul>
- 	 			<span class="new2">2 new</span>
- 	 		</li>
- 	 		<li ><img class="l3" src="http://googledrive.com/host/0B-l4_huYTH9yZTI1VDVxV1ZqdVk" alt="info">
- 	 			<ul class="list2"><li><h2>Updates</h2></li> <li><span>Google Play</span></li></ul>
- 	 			<span class="new3">1 new</span>
- 	 		</li>
- 	 	</ul> 
- 		</div>
+
+
+
+
+    <div class="list">
+      <ul class="messagelist">
+      <li><img class="l1" src="http://googledrive.com/host/0B-l4_huYTH9yUXJGR2pwQk5NSzA" alt="groub">
+        <ul class="list2"><li><h2>Social</h2></li> <li><span>Google+</span></li></ul>
+        <span class="new">1 new</span>
+      </li>
+      <li ><img class="l2" src="http://googledrive.com/host/0B-l4_huYTH9yY1hNQWo3M2hMQ2s" alt="local">
+        <ul class="list2"><li><h2>Promotions</h2></li> <li><span>Zagat, Google Offers</span></li></ul>
+        <span class="new2">2 new</span>
+      </li>
+      <li ><img class="l3" src="http://googledrive.com/host/0B-l4_huYTH9yZTI1VDVxV1ZqdVk" alt="info">
+      <ul class="list2"><li><h2>Updates</h2></li> <li><span>Google Play</span></li></ul>
+        <span class="new3">1 new</span>
+      </li>
+
+      <li class="letter">
+        <img class="l4" src="http://fimg2.pann.com/new/download.jsp?FileID=21103082" alt="picture">
+
+        <ul class="list2"><li><h2 class="name">zico♥</h2></li> <li><h3>우리 예쁜 수지 뭐하고 있어?</h3></li><li><span class="preview">수지야 우리 내일 오붓하게 심야로 영화나 보러갈까?</span></li></ul>
+        <span class="notice">daling</span>
+
+        <ul class="timestar"> <li class="time">2:45pm</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9ySGNua1hKX3NJaFE" alt="즐겨찾기"></li></ul>
+      </li>
+
+
+       <li class="letter">
+        <img class="l4" src="http://userserve-ak.last.fm/serve/_/89103011/Beenzino+00003.jpg" alt="picture">
+
+        <ul class="list2"><li><h2 class="name2">구남친</h2></li> <li><h3>자니?</h3></li><li><span class="preview2">자고잇어? 웨 답장을안해...오늘도 니 셍각이나.. 보고십다</span></li></ul>
+
+        <ul class="timestar"> <li class="time">1:00am</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9yQ2U2Q1lqVmt0ZHM
+" alt="즐겨찾기"></li></ul>
+      </li>
+
+      <li class="letter">
+        <img class="l4" src="http://googledrive.com/host/0B-l4_huYTH9yLWRHWDl0ejROelU" alt="picture">
+
+        <ul class="list2"><li><h2 class="name2">AK</h2></li> <li><h3>Re:수지학생</h3></li><li><span class="preview3"> 과제의 몇몇 부분을 수정해주시면 좋겠습니다</span></li></ul>
+
+        <ul class="timestar"> <li class="time">Nov 23</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9yQ2U2Q1lqVmt0ZHM
+" alt="즐겨찾기"></li></ul>
+      </li>
+
+
+      <li class="letter2">
+        <img class="l4" src="http://cfile23.uf.tistory.com/image/2467E73653402172357291" alt="picture">
+
+        <ul class="list2"><li><h2 class="name2">범아~</h2></li> <li><h3>그 코큰애는 정리한다며</h3></li><li><span class="preview4"> 도대체 언제 정리하는데 너 나 가지고 노는거냐?</span></li></ul>
+
+        <ul class="timestar"> <li class="time">Nov 23</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9yQ2U2Q1lqVmt0ZHM
+" alt="즐겨찾기"></li></ul>
+      </li>
+
+      <li class="letter">
+        <img class="l4" src="http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10666123_392427517588405_24853237_a.jpg" alt="picture">
+
+        <ul class="list2"><li><h2 class="name2">A반 친구</h2></li> <li><h3>PPT 정리부탁해~</h3></li><li><span class="preview5">너 솔직히 조별과제 날로먹는거 알지?^^ 똑바로 해라</span></li></ul>
+
+        <ul class="timestar"> <li class="time">Nov 22</li><li><img class="star" src="http://googledrive.com/host/0B-l4_huYTH9yQ2U2Q1lqVmt0ZHM
+" alt="즐겨찾기"></li></ul>
+      </li>
+
+    </ul> 
+
+    <img class="write" src="http://googledrive.com/host/0B-l4_huYTH9yMWxBVXZBMGRYWlE" alt="쓰기">
+    </div>
+
+
+
+    <div class="menu2">
+      <ul>
+        <li> <img src="http://googledrive.com/host/0B-l4_huYTH9ySXlsbkdDeFhYSTA" alt="아카이브"> </li>
+        <li><img src="http://googledrive.com/host/0B-l4_huYTH9yTXRsWjBTOS1fRkk" alt="삭제"></li>
+        <li><img src="http://googledrive.com/host/0B-l4_huYTH9yVGZXNG4wdE90Nmc" alt="메일"></li>
+        <li><img src="http://googledrive.com/host/0B-l4_huYTH9yWERmb0RmQVIxUnc" alt="폴더"></li>
+        <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjBtS2RSYUQzY1k" alt="공유"></li>
+      </ul>
+    </div>
+
+
+
+
+
+      <div class="talkbox">
+        <ul>
+          <li> <h2 class="club">오늘 밤에 강남 클럽 갈 사람?</h2> </li>
+          <li> <span class="notice2">Fun</span> </li>
+          <li> <span class="notice3">Inbox</span> </li>
+          <li><img class="star2" src="http://googledrive.com/host/0B-l4_huYTH9ySGNua1hKX3NJaFE" alt="즐겨찾기"></li>
+
+        </ul>
+
+        <ul>
+          <li class="letter">
+        <img class="l4" src="http://fimg2.pann.com/new/download.jsp?FileID=21103082" alt="picture">
+
+        <ul class="list2"><li><h2 class="name">zico♥</h2></li> <li><span class="re">절대 안된다ㅡㅡ</span></li></ul>
+
+        <li class="time2">Nov 21</li>
+        </ul>
+
+
+        <ul>
+          <li class="letter">
+        <img class="l4" src="http://googledrive.com/host/0B-l4_huYTH9ydmR1VmlHMEdTQnc" alt="picture">
+
+        <ul class="list2"><li><h2 class="name3">혀니</h2></li> <li><span class="re">나는 좋아~ 어디서 볼까?</span></li></ul>
+
+        <li class="time3">Nov 21</li>
+        </ul>
+
+
+        <ul class="sulli">
+          <li class="letter">
+        <img class="l4" src="http://googledrive.com/host/0B-l4_huYTH9yRDhVd0lsUGFPczQ" alt="picture">
+
+        <ul class="list2"><li><h2 class="name3">진리</h2></li> <li><span class="re">나도나도! 나 에프엑스 때려치웠어!</span></li>
+          <li class="time4">Nov 21 <span class="detail"> View details</span></ul></li>
+
+        <li class="icon">
+          <ul>
+          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjhXZlZSY05wdjQ" alt="되돌아가기"></li>
+          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yY1pKenh5c2ZrMlU" alt="보기"></li>
+          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yZjZwVTJIOTVDWGs" alt="더보기"></li>
+
+        </ul></li>
+
+        <li class="sunday">Sunday works! If you can get Dexter and Sophie I will handle the chips and salsa.<br><span class="show">▶ Show quited text</span></li>
+
+
+
+        </ul>
+
+        <ul class="last">
+          <li class="right"><img src="http://googledrive.com/host/0B-l4_huYTH9yZjhXZlZSY05wdjQ" alt="되돌아가기">
+          <span class="play">Replay</span></li>
+          <li class="right"><img src="http://googledrive.com/host/0B-l4_huYTH9yeGZOZGhYMWNMSnc" alt="모두 되돌아가기">
+            <span class="play">Replay all</span></li>
+          <li><img src="http://googledrive.com/host/0B-l4_huYTH9yY1pKenh5c2ZrMlU" alt="다음">
+            <span class="play">Foward</span></li>
+
+        </ul>
+      </div>
+
+
 
  </body>
 
