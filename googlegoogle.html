@@ -56,7 +56,8 @@
   div.menu2 >ul> li {display: inline-block;
                     margin-right: 20px;}
 
-  .menu1 {padding-right: 10%;}
+  img.menu1 {padding-right: 20px;}
+  img.menu2 {left: 20px;}
   div.side {position: absolute;
         top:25px;
         left:0;
@@ -70,13 +71,21 @@
   .s2 , .suzy {width: 27px;
       border-radius: 80px;
       margin-bottom: 10px;}
+
   ul.sidemenu {
         height: 600px;
         margin-top: 10%;
-        margin-left: 15px;
-        padding:0;}
+        margin-left: 10px;
+        width: 15px;
+        padding:0;
+        text-align: center;}
   ul.sidemenu>li{vertical-align: top;}
-  .s1{margin-bottom: 10px;}
+  .s1, .s0{margin-bottom: 10px;}
+  .suzy , .s1{padding-left: 6px;}
+
+  .s0 {background-color: #e4e4e4;
+      border-radius: 10%;
+      padding: 7px 7px 7px 7px;}
   .sidemenu2{position: fixed;
         bottom: 40px;}
   .sidemenu3{position: fixed;
@@ -111,15 +120,15 @@
       font-size: 12px;
       color:white;
       padding: 2px 4px 2px 4px;
-      margin-top: 13px;}
-    .new {background-color: #4986E7;
-      margin-left: 240px;}
+      margin-top: 13px;
+      right: 40px;}
+    .new {background-color: #4986E7;}
 
-    .new2 {background-color: #16A765;
-      margin-left: 178px;}
+    .new2 {background-color: #16A765;}
 
-    .new3 {background-color: #E9B22F;
-      margin-left: 224px;}
+    .new3 {background-color: #E9B22F;}
+
+    img.star {right: 40px;}
 
     img.l4 {width: 30px;
       border-radius: 80px;
@@ -168,7 +177,7 @@
             border-radius: 50%;
             position: fixed;
             bottom: 40px;
-            left:410px;
+            margin-left:70%;
             box-shadow: -1px 3px 5px #CCC;}
 
   .talkbox > ul {padding: 0;
@@ -262,10 +271,21 @@
   ul.sulli {border-bottom: 0;
             margin-bottom: 0;}
 
+  .count1 ,.count2 {position: absolute;
+          bottom: 10px;
+          left: 0;
+          font-size: 9px;
+          background-color: white;
+          border-radius: 40%;
+          box-shadow: -0.5px 1px 3px #ababab;}
+  .count1{padding: 1px 6px 1px 6px;}
+  .count2{padding: 1px 3px 1px 3px;}
 
 
-  @media (max-width:1000px){
+  @media (max-width:700px){
       div.menu2, .talkbox {visibility: hidden;}
+      div.menu{width: 100%;}
+      div.list{width: 91.2%;}
     }
 
   </style>
@@ -276,6 +296,8 @@
 
 
  <body>
+
+  <div class= "leftlist">
 
     <header>
     <div class="menu">
@@ -291,14 +313,14 @@
       <ul class="sidemenu">
 
       <li><img class="suzy" src="http://i.imgur.com/6jGVWZ5.jpg" alt="프로필"></li>
-      <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9yWnczZkRJS25KVTA" alt="inbox"></li>
+      <li><img class="s0" src="http://googledrive.com/host/0B-l4_huYTH9yWnczZkRJS25KVTA" alt="inbox"></li>
       <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9yUzBWQ3dVNzJSWWc" alt="group"></li>
       <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9ydEtIdDVKd1FpVU0" alt="local"></li>
-      <li><img src="http://googledrive.com/host/0B-l4_huYTH9ySWtJRFdhYm1MeGs" alt="info"></li>
+      <li><img class="s1" src="http://googledrive.com/host/0B-l4_huYTH9ySWtJRFdhYm1MeGs" alt="info"></li>
     </ul>
     <ul>
-      <li class="sidemenu2"><img class="s2" src="http://cfile30.uf.tistory.com/image/2054034C4FFEC61F185689" alt="프로필사진"></li>
-      <li class="sidemenu3"><img class="s2" src="http://cfile23.uf.tistory.com/image/2467E73653402172357291" alt="프로필사진"></li>
+      <li class="sidemenu2"><img class="s2" src="http://cfile30.uf.tistory.com/image/2054034C4FFEC61F185689" alt="프로필사진"><span class="count1">5</span></li>
+      <li class="sidemenu3"><img class="s2" src="http://cfile23.uf.tistory.com/image/2467E73653402172357291" alt="프로필사진"><span class="count2">10</span></li>
     </ul> 
     </div>
 
@@ -372,6 +394,8 @@
 
     <img class="write" src="http://googledrive.com/host/0B-l4_huYTH9yMWxBVXZBMGRYWlE" alt="쓰기">
     </div>
+
+  </div>
 
 
 
