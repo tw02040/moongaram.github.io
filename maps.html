@@ -128,8 +128,26 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
       border-bottom: 2px solid;
     }
     
-    div.all2 { margin-top: 186px;}
+    div.all2 { 
+      margin-top: 186px;
+      font-family: 'Jeju Gothic', serif;
+      font-size:15px;
+      line-height:1.8em;
+      width:100%;
+          }
     
+    .list1 >ul>li>i{
+      color:#656565;
+      font-size:18px;
+    }
+    li.listbus{margin-right:40px;}
+    li.timeleft{font-weight:bold;}
+    ul>li.time{
+      position:absolute;
+      right:10%;
+      z-index: -1;}
+    span.timecolor{color:#4A4A4A;}
+
     
  
 
@@ -183,18 +201,22 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
    </section>
 
    
+   
+   
+   
+   
    <div class="all2">
      
 	<section class="result1">
       
       <section class="list1">
         <ul>
-          <li>
+          <li class="listbus">
             <i class="fa fa-bus"></i>
           </li>
         </ul>
         <ul class="bus1">
-          <li>4:09 - 5:35 PM 1 hr 25min</li>
+          <li class="timeleft">4:09 - 5:35 PM </li>
           <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
             <i class="fa fa-bus"></i> <span class="11">1-1</span> 
             <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
@@ -202,6 +224,9 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
           </li>
           <li>4:25PM from 계원예술대학교</li>
           <li><i class="fa fa-female"></i>10min Every 10 min</li>
+        </ul>
+        <ul>
+          <li class="time">1 <span class="timecolor">hr</span> 25<span class="timecolor">min</span></li>
         </ul>
       </section>
       
