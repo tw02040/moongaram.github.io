@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <title>Google Maps</title>
+
+  <style>
+
+    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+    
+    
+  body {margin: 0;}
+  
+  div.all2 {margin-left:10%;}
+
+  section.search {
+  	background-color: #4688F1;
+  	width: 100%;
+  	height: 148px;
+  	top:0;
+
+  } 
+
+  section .options {
+  	position: absolute;
+  	top:148px;
+  	background-color: #366AD3;
+  	width: 100%;
+  	height: 42px;
+  	box-shadow: -0.5px 1px 3px #ababab;
+  }
+    
+  section.result1 {
+    margin-top: 60px;
+    display: block;
+  }
+    
+   section.list1 >ul ,
+   section.list2 >ul ,
+   section.list3 >ul ,
+   section.list4 >ul {float:left;
+   }
+ 
+   section.list1 ,section.list2 ,section.list3 , section.list4
+    {display:inline-block;}
+    
+    
+  ul {
+    list-style-type: none;
+    padding: 0;
+     }
+   
+  ul.menu{
+    margin-left: 20px;
+    margin-top:0;
+    margin-bottom:2px;
+  }
+
+  ul.menu > li {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    padding-top: 16px;
+    }
+li.menuleft1 {margin-right:5%;}
+li.menuleft2, li.menuleft3, li.menuleft4 {margin-right:10px;}
+li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
+       
+   section.route {
+     width:80%;
+     height:90px;
+     margin-left: 10%;
+   }
+    section.route>ul{
+      float:left;
+    }
+    
+    ul.options2 {margin-left:10%;}
+    ul.options2>li{
+      display:inline;
+      padding:0;}
+    
+    ul.icons {
+      color:white;
+      margin-right:40px;
+      text-align:center;
+    }
+    
+    ul.kas{
+      width:80%;
+      color:#DFE9FC;
+      font-family: 'Jeju Gothic', serif;
+      font-size:14px;
+      
+        }
+    ul.kas>li{
+      margin-bottom:10px;
+      margin-top:3px;
+    }
+    li.line{padding-bottom:10px;}
+    span.kas2>i{
+      color:#DFE9FC;
+      margin-top:36px;
+      margin-left:40px;
+    }
+    
+    li.line{
+      border-bottom: 2px solid;
+    }
+    
+    
+ 
+
+  </style>
+
+</head>
+
+<body>
+
+ <div class="all">
+
+	<section class="search">
+
+		<ul class="menu">
+			<li class="menuleft1"><i class="fa fa-arrow-left"></i></li>
+			<li class="menuleft2"><i class="fa  fa-car"></i></li>
+			<li class="menuleft3"><i class="fa fa-bus"></i></li>
+			<li class="menuleft4"><i class="fa fa-female"></i></li>
+		</ul>
+      
+      
+      <section class="route">
+        
+        <ul class="icons">
+          <li><i class="fa fa-map-marker"></i></li>
+          <li><i class="fa fa-ellipsis-v"></i></li>
+          <li><i class="fa fa-map-marker"></i></li>
+        </ul>
+        
+        <ul class="kas">
+          <li class="line">계원예술대학교</li>
+          <li>신사동가로수길</li>
+        </ul>
+        
+        <span class="kas2">
+          <i class="fa fa-random"></i>
+        </span>
+        
+      </section>
+      
+      
+
+	 <section class="options">
+       <ul class="options2">
+          <li><i class="fa fa-sliders"></i></li>
+          <li>Depart at 4:09 PM</li>
+          <li>OPTIONS</li>
+        </ul>
+	 </section>
+
+   </section>
+
+   
+   <div class="all2">
+     
+	<section class="result1">
+      
+      <section class="list1">
+        <ul>
+          <li>
+            <i class="fa fa-bus"></i>
+          </li>
+        </ul>
+        <ul class="bus1">
+          <li>4:09 - 5:35 PM 1 hr 25min</li>
+          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
+            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
+            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
+            <span class="11">441</span>
+          </li>
+          <li>4:25PM from 계원예술대학교</li>
+          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+        </ul>
+      </section>
+      
+      </section>
+      
+      
+      <section class="result2">
+        
+      <section class="list2">
+        <ul>
+          <li>
+            <i class="fa fa-bus"></i>
+          </li>
+        </ul>
+        <ul>
+          <li>4:09 - 5:35 PM 1 hr 25min</li>
+          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
+            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
+            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
+            <span class="11">441</span>
+          </li>
+          <li>4:25PM from 계원예술대학교</li>
+          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+        </ul>
+      </section>
+        
+        </section>
+      
+      
+      <section class="result3">
+      <section class="list3">
+        <ul>
+          <li>
+            <i class="fa fa-bus"></i>
+          </li>
+        </ul>
+        <ul>
+          <li>4:09 - 5:35 PM 1 hr 25min</li>
+          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
+            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
+            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
+            <span class="11">441</span>
+          </li>
+          <li>4:25PM from 계원예술대학교</li>
+          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+        </ul>
+      </section>
+      </section>
+      
+      <section class="result4">
+      
+      <section class="list4">
+        <ul>
+          <li>
+            <i class="fa fa-bus"></i>
+          </li>
+        </ul>
+        <ul>
+          <li>4:09 - 5:35 PM 1 hr 25min</li>
+          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
+            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
+            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
+            <span class="11">441</span>
+          </li>
+          <li>4:25PM from 계원예술대학교</li>
+          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+        </ul>
+      </section>
+    
+      
+	</section>
+   </div>
+
+ </div>
+
+</body>
+</html>
