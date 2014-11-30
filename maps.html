@@ -14,8 +14,6 @@
     
   body {margin: 0;
         overflow-x:hidden}
-  
-  div.all2 {margin-left:10%;}
 
   section.search {
   	background-color: #4688F1;
@@ -48,6 +46,10 @@
    section.list1 ,section.list2 ,section.list3 , section.list4
     {display:inline-block;}
     
+   section.list2, .list3, .list4{
+     border-top:2px solid #F0F0F0;;
+     width:90%;
+   }
     
   ul {
     list-style-type: none;
@@ -134,9 +136,10 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
       font-size:15px;
       line-height:1.8em;
       width:100%;
+      margin-left:10%;
           }
     
-    .list1 >ul>li>i{
+    .list1 >ul>li>i, .list2 >ul>li>i , .list3 >ul>li>i , .list4>ul>li>i{
       color:#656565;
       font-size:18px;
     }
@@ -145,8 +148,46 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
     ul>li.time{
       position:absolute;
       right:10%;
-      z-index: -1;}
+      font-weight:bold;
+    }
     span.timecolor{color:#4A4A4A;}
+    
+    li.i1{margin-bottom:5px;}
+    li.i1>i {
+      margin-right:6px;
+      margin-left:3px;}
+    .gray {color:#CCCCCC;}
+    li.소요시간 {
+      color:#A3A3A3;
+      font-size:13px;}
+    
+    span.every {margin-left: 20px;}
+    span.no1 , .no2 ,.no3,.no4,.no5{
+      font-size:14px;
+      color:white;
+      padding:2px 5px 2px 5px;;
+    }
+    span.no1{
+      background-color: #3250EE;
+      margin-right:4px;}
+    span.no2{background-color: #3250EE;
+      margin-right:6px;
+      }
+    span.no3{background-color:#20B623;
+      margin-right:7px;
+      }
+    span.no4{background-color:#CD4A1A;}
+    span.no5{background-color:#EF251B;
+      margin-right:6px;}
+
+    
+    
+    @media (max-width: 500px) {
+   span.no2,.no3,.no4,.no5 {
+      display:none;
+   }
+      li.time {margin-right:50px;}
+}
 
     
  
@@ -215,15 +256,16 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
             <i class="fa fa-bus"></i>
           </li>
         </ul>
+        
         <ul class="bus1">
           <li class="timeleft">4:09 - 5:35 PM </li>
-          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
-            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
-            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
-            <span class="11">441</span>
+          <li class="i1"><i class="fa fa-female"></i> <span class="gray"><i class="fa fa-angle-right"></i></span>
+            <i class="fa fa-bus"></i> <span class="no1">1-1</span> 
+            <span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no1">441</span>
           </li>
-          <li>4:25PM from 계원예술대학교</li>
-          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+          <li class="소요시간">4:25PM from 계원예술대학교</li>
+          <li class="소요시간"><span class="소요시간"><i class="fa fa-female"></span></i>10min <span class="every">Every 10 min</span></li>
         </ul>
         <ul>
           <li class="time">1 <span class="timecolor">hr</span> 25<span class="timecolor">min</span></li>
@@ -241,15 +283,17 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
             <i class="fa fa-bus"></i>
           </li>
         </ul>
+        
         <ul class="bus1">
-          <li class="timeleft">4:09 - 5:35 PM </li>
-          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
-            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
-            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
-            <span class="11">441</span>
+          <li class="timeleft">4:09 - 5:41 PM </li>
+          <li class="i1"><i class="fa fa-female"></i> <span class="gray"><i class="fa fa-angle-right"></i></span>
+            <i class="fa fa-bus"></i> <span class="no1">1-1</span> 
+            <span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no3">4318</span><span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no4">9404</span>
           </li>
-          <li>4:25PM from 계원예술대학교</li>
-          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+          <li class="소요시간">4:25PM from 계원예술대학교</li>
+          <li class="소요시간"><span class="소요시간"><i class="fa fa-female"></span></i>10min <span class="every">Every 25 min</span></li>
         </ul>
         <ul>
           <li class="time">1 <span class="timecolor">hr</span> 25<span class="timecolor">min</span></li>
@@ -261,54 +305,60 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
       
      
      
-      <section class="result3">
+      <section class="result1">
       
-      <section class="list3">
+      <section class="list1">
         <ul>
           <li class="listbus">
             <i class="fa fa-bus"></i>
           </li>
         </ul>
+        
         <ul class="bus1">
           <li class="timeleft">4:09 - 5:35 PM </li>
-          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
-            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
-            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
-            <span class="11">441</span>
+          <li class="i1"><i class="fa fa-female"></i> <span class="gray"><i class="fa fa-angle-right"></i></span>
+            <i class="fa fa-bus"></i> <span class="no1">51</span> 
+            <span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no2">540</span><span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no2">148</span>
           </li>
-          <li>4:25PM from 계원예술대학교</li>
-          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+          <li class="소요시간">4:25PM from 계원예술대학교</li>
+          <li class="소요시간"><span class="소요시간"><i class="fa fa-female"></span></i>10min <span class="every">Every 12 min</span></li>
         </ul>
         <ul>
           <li class="time">1 <span class="timecolor">hr</span> 25<span class="timecolor">min</span></li>
         </ul>
       </section>
+      
       </section>
      
      
       
-      <section class="result4">
+      <section class="result1">
       
-      <section class="list4">
+      <section class="list1">
         <ul>
           <li class="listbus">
             <i class="fa fa-bus"></i>
           </li>
         </ul>
+        
         <ul class="bus1">
           <li class="timeleft">4:09 - 5:35 PM </li>
-          <li><i class="fa fa-female"></i> <i class="fa fa-angle-right"></i>
-            <i class="fa fa-bus"></i> <span class="11">1-1</span> 
-            <i class="fa fa-angle-right"></i><i class="fa fa-bus"></i>
-            <span class="11">441</span>
+          <li class="i1"><i class="fa fa-female"></i> <span class="gray"><i class="fa fa-angle-right"></i></span>
+            <i class="fa fa-bus"></i> <span class="no1">51</span> 
+            <span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no5">3030</span><span class="gray"><i class="fa fa-angle-right"></i></span><i class="fa fa-bus"></i>
+            <span class="no2">148</span>
           </li>
-          <li>4:25PM from 계원예술대학교</li>
-          <li><i class="fa fa-female"></i>10min Every 10 min</li>
+          <li class="소요시간">4:25PM from 계원예술대학교</li>
+          <li class="소요시간"><span class="소요시간"><i class="fa fa-female"></span></i>10min <span class="every">Every 20 min</span></li>
         </ul>
         <ul>
           <li class="time">1 <span class="timecolor">hr</span> 25<span class="timecolor">min</span></li>
         </ul>
       </section>
+      
       </section>
     
       
