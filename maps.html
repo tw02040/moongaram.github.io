@@ -57,10 +57,12 @@
      }
    
   ul.menu{
-    margin-left: 20px;
+    margin-left: 4%;
     margin-top:0;
     margin-bottom:2px;
   }
+    section.menuleft>ul.menu{
+      display:inline;}
 
   ul.menu > li {
     display: inline-block;
@@ -68,8 +70,17 @@
     padding: 10px;
     font-size: 22px;
     padding-top: 16px;
+    
     }
-li.menuleft1 {margin-right:5%;}
+    
+span.menuleft1 {
+    margin-right:5%;
+    margin-left:23px;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    padding-top: 16px;}
+    
 li.menuleft2, li.menuleft3, li.menuleft4 {margin-right:10px;}
 li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
        
@@ -137,6 +148,9 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
       line-height:1.8em;
       width:100%;
       margin-left:10%;
+      display:block;
+      overflow-y: scroll;
+      height:500px;
           }
     
     .list1 >ul>li>i, .list2 >ul>li>i , .list3 >ul>li>i , .list4>ul>li>i{
@@ -180,6 +194,8 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
     span.no4{background-color:#CD4A1A;}
     span.no5{background-color:#EF251B;
       margin-right:6px;}
+    
+
 
     
     
@@ -187,8 +203,14 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
    span.no2,.no3,.no4,.no5 {
       display:none;
    }
-      li.time {margin-right:30px;}
-      .kas2>i {right:15px;}
+      li.time {margin-right:40px;}
+      .kas2>i {right:20px;}
+      
+      span.menuleft1 {
+        margin-left:10%;}
+      
+      ul.menu{
+        margin-left: 0px;}
 }
 
     
@@ -203,13 +225,15 @@ li.menuleft2> i, li.menuleft4>i {color:#A9C8F8;}
  <div class="all">
 
 	<section class="search">
-
+      
+      <section class="menuleft">
+        <span class="menuleft1"><i class="fa fa-arrow-left"></i></span>
 		<ul class="menu">
-			<li class="menuleft1"><i class="fa fa-arrow-left"></i></li>
 			<li class="menuleft2"><i class="fa  fa-car"></i></li>
 			<li class="menuleft3"><i class="fa fa-bus"></i></li>
 			<li class="menuleft4"><i class="fa fa-female"></i></li>
 		</ul>
+      </section>
       
       
       <section class="route">
