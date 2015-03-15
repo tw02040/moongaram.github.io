@@ -1,0 +1,96 @@
+<html>
+
+<meta charset=utf-8>
+<head>
+<title>far company</title>
+
+<link href='http://fonts.googleapis.com/css?family=Scheherazade|Pontano+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+	body {
+		margin: 0;
+	}
+
+	img.logo {
+		width: 110px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+	}
+
+	ul.menu{
+		padding-left: 0;
+		display: table;
+		margin-right: auto;
+		margin-left: auto;
+		border-top: 1px solid rgb(152,152,152);
+		border-bottom: 1px solid rgb(152,152,152);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	ul>li {
+		list-sle-type: none;
+		display: inline;
+		font-size: 10px;
+		color: rgb(94,94,94);
+		font-family: 'Pontano Sans', sans-serif;
+	}
+
+	li.menu1, .menu2, .menu3 {
+		margin-right: 35px;
+	}
+	li.menu1 {
+		margin-left: 10px;
+	}
+	li.menu4{
+		margin-right: 10px;
+	}
+
+	p {
+		font-size: 12px;
+		text-align: center;
+		color: rgb(162,162,162);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-family: 'Scheherazade', serif;
+	}
+
+	.mainp {
+		width: 800px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+</style>
+</head>
+
+
+<body>
+
+	<header>
+
+		<img class="logo" src="far_logo.jpg" alt="로고">
+
+	<ul class="menu">
+		<li class="menu1">HOME</li>
+		<li class="menu2">WORKS</li>
+		<li class="menu3">ABOUT</li>
+		<li class="menu4">CONTACT</li>
+	</ul>
+
+</header>
+
+	<p>
+		Company , Customer , Communication<br>
+		We think about the way.
+
+	</p>
+
+	<img class="mainp" src="ex1.jpg" alt="메인사진">
+
+</body>
+
+</html>
