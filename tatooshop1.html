@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>tattoo shop</title>
+		<link rel="stylesheet" type="text/css" href="styles/my_style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<style>
+
+	body {
+		background-color: #ececec;
+	}
+	.name {
+		font-size: 40px;
+		text-align: center;
+		margin: 30px;
+		font-family: 'Lobster', cursive;
+	}
+
+
+	#tattoo1 {
+	padding: 20px;
+	display: inline;
+}
+	#tattoo1>img{
+		width: 80px;
+	}
+
+	#tattoo2{
+		position: absolute;
+		display: inline;
+		z-index: 1;
+	}
+	#tattoo2>img{
+		width: 80px;
+	}
+
+	#tattoo3{
+		position: absolute;
+		display: inline;
+	}
+	#tattoo3>img{
+		width: 80px;
+		padding-left: 100px;
+	}
+	#preview {
+		margin-left: 38%;
+	}
+
+	#picframe1 , #picframe2 , #picframe3 {	
+		padding-top: 20px;
+		display: none;
+		text-align: center;
+	}
+
+	#picframe1 > img ,#picframe2>img ,#picframe3>img{
+		width: 400px;
+	}
+
+	#price1,#price2,#price3{
+		text-align: center;
+		top:200px;
+		display: none;
+	}
+
+	#price1>p,#price2>p,#price3>p{
+		font-size: 12px;
+		margin-top: 8px;
+	}
+
+
+	</style>
+
+	</head>
+
+
+	<body>
+
+		<div class="name">Tattoo Shop</div>
+
+		<div id="preview">
+
+		<div id="tattoo1"><img src="http://moongaram.github.io/t01.jpg"></div>
+		<div id="tattoo2"><img src="http://moongaram.github.io/t02.jpg"></div>
+		<div id="tattoo3"><img src="http://moongaram.github.io/t03.jpg"></div>
+		</div>
+
+
+
+
+		<div id="picframe1">
+			<img src="http://moongaram.github.io/t01.jpg">
+		</div>
+		<div id="picframe2">
+			<img src="http://moongaram.github.io/t02.jpg">
+		</div>
+		<div id="picframe3">
+			<img src="http://moongaram.github.io/t03.jpg">
+		</div>
+
+
+		<div id="price1">
+			<p>design 1. 8,0000<p>
+		</div>
+		<div id="price2">
+			<p>design 1. 9,0000<p>
+		</div>
+		<div id="price3">
+			<p>design 1. 10,0000<p>
+		</div>
+
+
+
+
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#tattoo1').click(function() {
+					$('img').fadeIn(1000);
+					$('#picframe1').slideToggle('slow');
+					$('body').css('background','#d8d8d8');
+					$('#picframe2').css('display','none');
+					$('#picframe3').css('display','none');
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#tattoo2').click(function() {
+					$('body').css('background','#bbbbbb');
+					$('#picframe2').slideToggle('slow');
+					$('#picframe1').css('display','none');
+					$('#picframe3').css('display','none');
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#tattoo3').click(function() {
+					$('body').css('background','#a8a8a8');
+					$('#picframe3').slideToggle('slow');
+					$('#picframe1').css('display','none');
+					$('#picframe2').css('display','none');
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#picframe1').click(function() {
+					$('#price1').slideToggle('slow');
+					$('#price2').css('display','none');
+					$('#price3').css('display','none');
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#picframe2').click(function() {
+					$('#price2').slideToggle('slow');
+					$('#price1').css('display','none');
+					$('#price3').css('display','none');
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#picframe3').click(function() {
+					$('#price3').slideToggle('slow');
+					$('#price1').css('display','none');
+					$('#price2').css('display','none');
+				});
+			});
+		</script>
+
+	</body>
+</html>
