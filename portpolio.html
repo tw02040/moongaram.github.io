@@ -9,6 +9,10 @@
 	<style>
 	@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
+	*{
+  box-sizing:border-box;
+}
+
 	body {
 		margin: 0;
 		margin-left:auto; 
@@ -66,7 +70,7 @@
 	}
 
 	.worklist>li>img , span {
-		width: 55%;
+		width: 58%;
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
@@ -87,6 +91,45 @@
 
 	@media (max-width: 400px){
 
+
+
+		.worklist>li>img , span {
+		width: 80%;
+		}
+
+		.work{
+		top:170px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		overflow: auto;
+
+	}
+
+		.header {
+		height: 170px;
+		width: 100%;
+		}
+
+		.logo{
+			display: inline-block;
+			text-align: center;
+		}
+
+		.menu {
+			display: block;
+
+		}
+
+		.menu>li{
+			float:left;
+ 			width:18%;
+ 			 text-align:center;
+ 			 margin-top: 50px;
+ 			 font-size: 18px;
+ 		}
+
+
 	}
 
 
@@ -96,6 +139,7 @@
 <body>
 
 	<div class="header">
+
 		<img class="logo" src="http://moongaram.github.io/logo.jpg" alt="logo">
 
 		<ul class="menu">
