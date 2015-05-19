@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lateef' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,width=device-width"/>
+	<title>moongaram</title>
+
+	<style>
+	@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+	*{
+  box-sizing:border-box;
+}
+
+	body {
+		margin: 0;
+		margin-left:auto; 
+		margin-right:auto;
+		max-width: 800px;
+	}
+
+	.header {
+		height: 130px;
+	}
+
+	.logo {
+		display: block;
+		width: 80px;
+		float: left;
+		margin-top: 10px;
+	}
+
+	.menu{
+		position: absolute;
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+		padding-top: 6em;
+		right: 22%;
+	}
+
+	.menu>li {
+		display: inline;
+		margin-right: 1em;
+		margin-left: 1em;
+		font-family: 'Lateef', cursive;
+		font-size: 1em;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.menu>li:hover {
+		background-color: #f0ff00;
+		
+	}
+
+	.about{
+		position:absolute;
+		top:130px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		overflow: auto;
+		text-align: left;
+		margin-top: 150px;
+
+	}
+
+	.about>span {
+		left: 100px;
+		font-family: 'Jeju Myeongjo', serif;
+		font-size: 12px;
+		max-width: 43%;
+		line-height: 2em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about1, .about2 {
+		padding-top: 15px;
+	}
+
+
+
+	@media (max-width: 400px){
+
+
+
+			.worklist>li>img , span {
+			width: 80%;
+			}
+
+			.logo {
+				width: 60px;
+				margin-top:7%;
+				margin-left: 7%;
+			}
+
+
+			.menu {
+				right: 10%;
+				padding-top: 0;
+				top:3%;
+			}
+
+			.menu>li{
+				display:block;
+				line-height: 2em;
+				font-size: 1em;
+			}
+
+		}
+
+
+
+		</style>
+</head>
+
+<body>
+
+	<div class="header">
+
+		<img class="logo" src="http://moongaram.github.io/logo.jpg" alt="logo">
+
+		<ul class="menu">
+			<li><strong>about</strong></li>
+			<li>works</li>
+			<li>contact</li>
+		</ul>
+	</div>
+
+	<div class="about">
+
+		<span>문가람<br>
+		1992.08.16<br></span>
+
+		<span class="about1">1<br>
+		시 들여다보는 것을 좋아합니다. 특히 '내 고통은 자막이 없다 읽히지 않는다' 라는 시 구절을 좋아합니다. 감성을 자극 시키는 일은 어느 한구석이 쓰라릴지언정 아무리 지나도 지겹지 않더군요. <br>
+		</span>
+		
+		<span class="about2">2<br>
+		존재하고 있는 모든 영역의 디자인을 합니다. 볼수록 궁금해지는 디자인을 하고 싶습니다. 모든 사람이 그러하듯 기억되는 사람이 되고 싶습니다.</span>
+	</div>
+
+
+
+	</body>
+
+</html>
