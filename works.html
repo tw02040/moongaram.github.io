@@ -82,6 +82,7 @@
 
 
 	.worklist>li{
+		width: 100%;
 		position: relative;
 	}
 
@@ -89,13 +90,17 @@
 	.text {
 		position: absolute;
 		display: block;
-		opacity: 0;
+		width: 30%;
 		text-align: center;
+		opacity: 0;
 		font-size: 1em;
 		left: 0;
 		top:0;
 		bottom: 0;
 		right: 0;
+		line-height: 12em;
+		font-weight: bold;
+		font-family: 'Jeju Myeongjo', serif;
 	}
 
 
@@ -148,8 +153,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".pic1").mouseover(function(){
-        $(".pic1").css("opacity", "0.2");
+    $(".pic1" ).mouseover(function(){
+        $(".pic1").css("opacity", "0.1");
          $(".text").css("opacity", "1");
     });
 
@@ -169,8 +174,8 @@ $(document).ready(function(){
 		<img class="logo" src="http://moongaram.github.io/logo.jpg" alt="logo">
 
 		<ul class="menu">
-			<li><strong>about</strong></li>
-			<li>works</li>
+			<li>about</li>
+			<li><strong>works</strong></li>
 			<li>contact</li>
 		</ul>
 	</div>
