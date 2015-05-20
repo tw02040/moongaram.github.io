@@ -88,7 +88,6 @@
 
 
 	.text {
-		z-index: -1;
 		position: absolute;
 		display: block;
 		width: 30%;
@@ -104,33 +103,6 @@
 		font-family: 'Jeju Myeongjo', serif;
 	}
 
-	.text2 {
-		z-index: -1;
-		position: absolute;
-		display: block;
-		left: 0;
-		right: 0;
-		top:0;
-		bottom:0;
-		text-align: center;
-		line-height: 12.5em;
-		opacity: 0;
-		font-family: 'Jeju Myeongjo', serif;
-		font-size: 1em;
-		font-weight: bold;
-	}
-
-	.text3{
-		z-index: -1;
-		position: absolute;
-		display: block;
-		right: 58px;
-		line-height: 12.7em;
-		font-size: 1em;
-		font-family: 'Jeju Myeongjo', serif;
-		font-weight: bold;
-		opacity: 0;
-	}
 
 
 
@@ -164,23 +136,7 @@
 				font-size: 1em;
 			}
 
-			.workbox {
-					}
-
-
-			.worklist>img {
-				text-align: center;
-			}
-
-
-			.text , .text2 , .text3{
-				width: 100%;
-				text-align: center;
-			}
-
 		}
-
-
 
 
 
@@ -207,32 +163,6 @@ $(document).ready(function(){
         $(".text").css("opacity" , "0");
     });
 });
-
-$(document).ready(function(){
-    $(".pic2" ).mouseover(function(){
-        $(".pic2").css("opacity", "0.1");
-         $(".text2").css("opacity", "1");
-    });
-
-    $(".pic2").mouseout(function(){
-        $(".pic2").css("opacity", "1");
-        $(".text2").css("opacity" , "0");
-    });
-});
-
-
-$(document).ready(function(){
-    $(".pic3" ).mouseover(function(){
-        $(".pic3").css("opacity", "0.1");
-         $(".text3").css("opacity", "1");
-    });
-
-    $(".pic3").mouseout(function(){
-        $(".pic3").css("opacity", "1");
-        $(".text3").css("opacity" , "0");
-    });
-});
-
 </script>
 
 
@@ -244,7 +174,7 @@ $(document).ready(function(){
 		<img class="logo" src="http://moongaram.github.io/logo.jpg" alt="logo">
 
 		<ul class="menu">
-			<li>about</li>
+			<li><a href="http://moongaram.github.io/moon_about.html">about</a></li>
 			<li><strong>works</strong></li>
 			<li>contact</li>
 		</ul>
@@ -257,9 +187,9 @@ $(document).ready(function(){
 	<div class="workbox">
 		<ul class="worklist">
 			<li class="pic1box"><img class="pic1" src="http://moongaram.github.io/portpolio/pic2.jpg" alt="font"><span class="text">한글디자인 , 2015 </span></li>
-			<li><img class="pic2" src="http://moongaram.github.io/portpolio/pic1.jpg" alt="resume"><span class="text2">한글디자인 , 2015 </span></li>
-			<li><img class="pic3" src="http://moongaram.github.io/portpolio/pic4.jpg" alt="farcompany"><span class="text3">파컴퍼니 웹디자인 , 2015 </span></li>
-			<li><img class="pic4" src="http://moongaram.github.io/portpolio/pic3.jpg" alt="module2"><span class="text3">파컴퍼니 웹디자인 , 2015 </span></li>
+			<li><img class="pic2" src="http://moongaram.github.io/portpolio/pic1.jpg" alt="resume"></li>
+			<li><img class="pic3" src="http://moongaram.github.io/portpolio/pic4.jpg" alt="farcompany"></li>
+			<li><img class="pic4" src="http://moongaram.github.io/portpolio/pic3.jpg" alt="module2"></li>
 			<li><img class="pic5" src="http://moongaram.github.io/portpolio/pic6.jpg" alt="module1"></li>
 			<li> <img class="pic6" src="http://moongaram.github.io/portpolio/pic5.jpg" alt="관계"></li>
 
