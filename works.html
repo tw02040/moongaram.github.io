@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lateef' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,width=device-width"/>
+	<title>moongaram</title>
+
+	<style>
+	@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+	*{
+  box-sizing:border-box;
+}
+
+	body {
+		margin: 0;
+		margin-left:auto; 
+		margin-right:auto;
+		max-width: 800px;
+	}
+
+	.header {
+		height: 130px;
+	}
+
+	.logo {
+		display: block;
+		width: 80px;
+		float: left;
+		margin-top: 10px;
+	}
+
+	.menu{
+		position: absolute;
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+		padding-top: 6em;
+		right: 22%;
+	}
+
+	.menu>li {
+		display: inline;
+		margin-right: 1em;
+		margin-left: 1em;
+		font-family: 'Lateef', cursive;
+		font-size: 1em;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.menu>li:hover {
+		background-color: #f0ff00;
+		
+	}
+
+	.workbox {
+		width: 100%;
+		margin-top: 80px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+	.worklist {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.worklist > li > img {
+		width: 30%;
+		float: left;
+		margin: 1.5%;
+	}
+
+
+	.textbox {
+		position: absolute;
+	}
+
+	.text {
+		opacity: 0;
+		left: 10%;
+	}
+
+
+
+
+
+
+
+	@media (max-width: 400px){
+
+
+
+			.worklist>li>img , span {
+			width: 80%;
+			}
+
+			.logo {
+				width: 60px;
+				margin-top:7%;
+				margin-left: 7%;
+			}
+
+
+			.menu {
+				right: 10%;
+				padding-top: 0;
+				top:3%;
+			}
+
+			.menu>li{
+				display:block;
+				line-height: 2em;
+				font-size: 1em;
+			}
+
+		}
+
+
+
+		</style>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".pic1").mouseover(function(){
+        $(".pic1").css("opacity", "0.2");
+         $(".text").css("opacity", "1");
+    });
+
+    $(".pic1").mouseout(function(){
+        $(".pic1").css("opacity", "1");
+        $(".text").css("opacity" , "0");
+    });
+});
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+	<div class="header">
+
+		<img class="logo" src="http://moongaram.github.io/logo.jpg" alt="logo">
+
+		<ul class="menu">
+			<li><strong>about</strong></li>
+			<li>works</li>
+			<li>contact</li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="workbox">
+		<ul class="worklist">
+			<li class="pic1box"><img class="pic1" src="http://moongaram.github.io/portpolio/pic2.jpg" alt="font"></li>
+			<li><img class="pic2" src="http://moongaram.github.io/portpolio/pic1.jpg" alt="resume"></li>
+			<li><img class="pic3" src="http://moongaram.github.io/portpolio/pic4.jpg" alt="farcompany"></li>
+			<li><img class="pic4" src="http://moongaram.github.io/portpolio/pic3.jpg" alt="module2"></li>
+			<li><img class="pic5" src="http://moongaram.github.io/portpolio/pic6.jpg" alt="module1"></li>
+			<li> <img class="pic6" src="http://moongaram.github.io/portpolio/pic5.jpg" alt="관계"></li>
+
+		</ul>
+	</div>
+
+
+	<div class="textbox">
+
+		<span class="text">글자디자인<br>2015</span>
+
+	</div>
+
+	</body>
+
+</html>
