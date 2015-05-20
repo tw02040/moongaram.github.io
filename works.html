@@ -6,6 +6,7 @@
 	<meta name="viewport" content="initial-scale=1,width=device-width"/>
 	<title>moongaram</title>
 
+
 	<style>
 	@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
@@ -77,13 +78,20 @@
 	}
 
 
-	.textbox {
-		position: absolute;
+
+	.worklist>li{
+		position: relative;
 	}
 
+
 	.text {
+		position: absolute;
+		display: block;
 		opacity: 0;
-		left: 10%;
+		text-align: center;
+		left: 0;
+		top:0;
+
 	}
 
 
@@ -126,7 +134,14 @@
 		</style>
 
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+
+
+
+</head>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
     $(".pic1").mouseover(function(){
@@ -140,10 +155,6 @@ $(document).ready(function(){
     });
 });
 </script>
-
-
-
-</head>
 
 
 
@@ -166,7 +177,7 @@ $(document).ready(function(){
 
 	<div class="workbox">
 		<ul class="worklist">
-			<li class="pic1box"><img class="pic1" src="http://moongaram.github.io/portpolio/pic2.jpg" alt="font"></li>
+			<li class="pic1box"><img class="pic1" src="http://moongaram.github.io/portpolio/pic2.jpg" alt="font"><span class="text">한글디자인 <br> 2015 </span></li>
 			<li><img class="pic2" src="http://moongaram.github.io/portpolio/pic1.jpg" alt="resume"></li>
 			<li><img class="pic3" src="http://moongaram.github.io/portpolio/pic4.jpg" alt="farcompany"></li>
 			<li><img class="pic4" src="http://moongaram.github.io/portpolio/pic3.jpg" alt="module2"></li>
@@ -177,11 +188,7 @@ $(document).ready(function(){
 	</div>
 
 
-	<div class="textbox">
 
-		<span class="text">글자디자인<br>2015</span>
-
-	</div>
 
 	</body>
 
